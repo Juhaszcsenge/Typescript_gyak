@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <script src="main.js" defer></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+       
+
+        <div class="row">
+            <div class="col-md-2">
+                <label for="cim">
+                    A könyv Cime: <br>
+                    <input type="text" name="cim" id="cim">
+
+                </label> <br>
+            </div>
+            <div class="col-sm-2">
+                <label for="ar" >
+                    A könyv ára: <br>
+                    <input type="number" name="ar" id="ar">
+
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <label for="isbn">
+                    A könyv isbn száma: <br>
+                    <input type="text" name="isbnSzam" id="isbnSzam">
+                </label>
+            </div>
+            <div class="col-md-2">
+                <label for="suly">
+                    Súly(g): <br>
+                    <input type="number" name="suly" id="suly">
+                </label>
+            </div>
+            <div class="col-md-2">
+                <label for="meret">
+                    Méret(kb):<br>
+                    <input type="number" name="meret" id="meret" disabled>
+                </label>
+            </div>
+            <div class="col-md-2 ">
+                <label for="felvesz">
+                    <br> 
+                <input type="button" id="submit" name="felvesz" style="width: 100px;"  value="Felvesz">
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center" id="hiba" style="color: red;"> </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <form>
+                    <p> A könyv tipusa: </p>
+                    <label for="paperBook">
+                        <input type="radio" name="bookselect" id="paperBook" value="paperbook" checked >
+                        Papir alapú
+                    </label> <br>
+                    <label for="ebook">
+                        <input type="radio" name="bookselect" id="ebook" value="ebook" >
+                        E-book 
+                    </label>
+                </form>
+            </div>
+        </div>
+        </div>
+    
+
+</body>
+</html>
